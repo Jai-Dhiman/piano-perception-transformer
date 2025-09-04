@@ -124,24 +124,29 @@ This roadmap focuses on implementing cutting-edge Audio Spectrogram Transformers
 ## Implementation Timeline: Audio Spectrogram Transformer (6 Weeks)
 
 ### Week 1-2: Foundation and Data Pipeline
+
 **Goal**: Establish AST implementation framework and data processing
 
 **Key Tasks**:
+
 - [ ] Literature review: AST (2021), SSAST (2021), recent music transformer papers
 - [ ] Design AST architecture for 19-dimensional perceptual prediction
 - [ ] Implement mel-spectrogram → patch conversion (16×16 patches)
 - [ ] Create 2D positional encoding for frequency-time structure
 - [ ] Set up JAX/Flax project structure and dependencies
 
-**Deliverables**: 
+**Deliverables**:
+
 - Technical specification document for AST implementation
 - Working data pipeline: PercePiano audio → transformer-ready patches
 - Project repository with clean structure and documentation
 
 ### Week 3-4: Core Transformer Implementation  
+
 **Goal**: Implement complete AST architecture
 
 **Key Tasks**:
+
 - [ ] Multi-head self-attention mechanism with proper masking
 - [ ] Transformer encoder blocks with layer normalization
 - [ ] Multi-task regression heads for 19 perceptual dimensions
@@ -149,14 +154,17 @@ This roadmap focuses on implementing cutting-edge Audio Spectrogram Transformers
 - [ ] Model initialization and parameter counting
 
 **Deliverables**:
+
 - Complete AST model implementation in JAX/Flax
 - Unit tests for each component (attention, encoder, heads)
 - Model architecture visualization and parameter analysis
 
 ### Week 5-6: Training and Evaluation
+
 **Goal**: Train AST and achieve target performance
 
 **Key Tasks**:
+
 - [ ] Implement training loop with gradient accumulation
 - [ ] AdamW optimizer with cosine learning rate scheduling  
 - [ ] Comprehensive evaluation framework (correlations, significance tests)
@@ -164,12 +172,14 @@ This roadmap focuses on implementing cutting-edge Audio Spectrogram Transformers
 - [ ] Performance comparison with baseline approaches
 
 **Deliverables**:
+
 - Trained AST model achieving >0.7 correlation on key dimensions
 - Comprehensive evaluation report with statistical analysis
 - Attention visualizations showing musical focus patterns
 - Open-source code release with reproduction instructions
 
 ### Success Metrics
+
 - **Performance Target**: >0.7 correlation on Timing, Dynamics, Musical Expression
 - **Technical Quality**: Publication-ready implementation and evaluation
 - **Research Impact**: Novel insights into transformer attention on musical spectrograms
@@ -182,18 +192,21 @@ This roadmap focuses on implementing cutting-edge Audio Spectrogram Transformers
 This transformer-first approach provides strong evidence for graduate applications:
 
 ### **Technical Competency Demonstration**
+
 - **Modern Architectures**: Shows familiarity with cutting-edge deep learning (Transformers)
 - **Implementation Skills**: JAX/Flax demonstrates advanced framework knowledge
 - **Mathematical Understanding**: Self-attention and positional encoding show ML depth
 - **Research Engineering**: Publication-quality code and evaluation practices
 
 ### **Research Potential Evidence**  
+
 - **Novel Problem Identification**: Music perception is active, impactful research area
 - **Interdisciplinary Thinking**: Bridges AI/ML, music cognition, and human-computer interaction
 - **Open Research Questions**: Multiple natural extensions (cross-cultural, interpretability, few-shot)
 - **Community Impact**: Open-source contribution advances field
 
 ### **Timeline for Graduate Applications**
+
 - **Week 6**: Complete AST implementation and initial results
 - **Week 8**: Draft technical report/paper describing approach and findings
 - **Week 12**: Select and begin one research extension (cross-cultural, interpretability, etc.)
@@ -201,6 +214,7 @@ This transformer-first approach provides strong evidence for graduate applicatio
 - **Week 18**: Submit to conferences (ISMIR May deadline, ICASSP October deadline)
 
 ### **Portfolio Components**
+
 1. **Technical Implementation**: Publication-ready AST codebase with documentation
 2. **Research Results**: Comprehensive evaluation showing >0.7 correlation improvements
 3. **Novel Insights**: Analysis of what transformer attention reveals about music perception
