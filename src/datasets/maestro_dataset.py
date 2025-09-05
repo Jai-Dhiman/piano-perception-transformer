@@ -102,7 +102,7 @@ class MAESTRODataset:
 
     def _extract_mel_spectrogram(
         self, audio_path: Path
-    ) -> Optional[npt.NDArray[np.float_]]:
+    ) -> Optional[npt.NDArray[np.float64]]:
         """Extract mel-spectrogram from audio file"""
         try:
             # Load audio

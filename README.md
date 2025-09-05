@@ -40,12 +40,14 @@ piano-analysis-model/
 ## Technical Architecture
 
 ### Audio Spectrogram Transformer (AST)
+
 - **Input**: Mel-spectrograms (128 frequency bins × time frames)
 - **Patch Embedding**: 16×16 patches → 768-dimensional vectors
 - **Transformer**: 12-layer encoder with multi-head self-attention
 - **Multi-task Head**: 19 parallel regression outputs for perceptual dimensions
 
 ### Training Pipeline
+
 - **Framework**: JAX/Flax for high-performance training
 - **Optimization**: AdamW with cosine learning rate scheduling
 - **Evaluation**: Pearson correlation per dimension + cross-validation
@@ -53,6 +55,7 @@ piano-analysis-model/
 ## Dataset Insights
 
 **PercePiano Analysis:**
+
 - **1202 performances** across 19 perceptual dimensions
 - **22 professional performers**, classical repertoire (Schubert, Beethoven)
 - **Perceptual ratings**: [0-1] normalized, mean=0.553
@@ -61,12 +64,14 @@ piano-analysis-model/
 ## Implementation Plan
 
 **Phase 1**: AST Baseline (Current)
+
 1. Implement Audio Spectrogram Transformer architecture
 2. Train on PercePiano mel-spectrograms → 19-dimensional ratings  
 3. Achieve SOTA performance (target: >0.7 correlation on key dimensions)
 4. Comprehensive evaluation and comparison with baseline approaches
 
 **Phase 2**: Research Extensions (Future)
+
 - Cross-cultural musical perception studies
 - Interpretable attention visualization
 - Few-shot learning for new instruments
